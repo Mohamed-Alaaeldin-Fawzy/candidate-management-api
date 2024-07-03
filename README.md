@@ -140,6 +140,22 @@ The API uses centralized error handling to manage different types of errors. Cus
 
 Request validation is handled using Joi. All required fields are validated before processing the request to ensure data integrity.
 
+## Docker Deployment (make the app self deploying)
+
+To deploy the application using Docker, follow these steps:
+
+1. Ensure you have Docker and Docker Compose installed.
+
+2. Update the environment variables in the docker-compose.yml file to match your setup
+
+3. Build and start the containers:
+
+```bash
+docker-compose up --build
+```
+
+4. The application should now be running on http://localhost:8000.
+
 ## Testing
 
 To run tests, use the following command:
